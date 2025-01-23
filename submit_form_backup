@@ -1,0 +1,68 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require 'zoho/ZohoInventory.php';
+$zohoInventory = new ZohoInventory();
+
+// Log POST and FILES data for debugging
+file_put_contents('debug.log', "\nPOST Data:\n" . print_r($_POST, true), FILE_APPEND);
+file_put_contents('debug.log', "\nFILES Data:\n" . print_r($_FILES, true), FILE_APPEND);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $response = [];
+
+    // Handle file upload
+    $fileUploaded = false;
+    $fileTmpPath = '';
+    $fileName = '';
+    $fileType = '';
+
+    if (isset($_FILES['attachment']) && $_FILES['attachment']['error'] === UPLOAD_ERR_OK) {
+        $fileTmpPath = $_FILES['attachment']['tmp_name'];
+        $fileName = $_FILES['attachment']['name'];
+        $fileType = $_FILES['attachment']['type'];
+
+        // Optional: Move the file to a temporary location
+        $tempFilePath = 'uploads/' . basename($fileName); // Make sure 'uploads/' folder exists
+        if (move_uploaded_file($fileTmpPath, $tempFilePath)) {
+            $fileUploaded = true;
+            $fileTmpPath = $tempFilePath; // Update the file path for further use
+            file_put_contents('debug.log', "\nFile moved to: {$tempFilePath}", FILE_APPEND);
+        } else {
+            file_put_contents('debug.log', "\nFailed to move uploaded file.", FILE_APPEND);
+        }
+    }
+
+    // Collect form data
+    $moduleFields = [
+        'cf_reference_number' => $_POST['piNumber'] ?? null,
+        'cf_date' => !empty($_POST['piDate']) ? date('Y-m-d', strtotime($_POST['piDate'])) : null,
+        'cf_amount_to_be_paid' => $_POST['piAmount'] ?? 0.00,
+        'cf_purchase_order' => $_POST['cf_purchase_order'] ?? null,
+        'cf_po_num' => $_POST['cf_po_num'] ?? null
+    ];
+
+    // Step 1: Create record in Zoho Inventory
+    $createResponse = $zohoInventory->create_TransferRequest($moduleFields);
+    file_put_contents('debug.log', "\nCreate Response:\n" . print_r($createResponse, true), FILE_APPEND);
+
+    if (isset($createResponse['module_record']['module_record_id'])) {
+        $recordId = $createResponse['module_record']['module_record_id'];
+        $response['createRecord'] = $createResponse;
+
+        // Step 2: Upload attachment (if file is uploaded)
+        if ($fileUploaded) {
+            $attachmentResponse = $zohoInventory->uploadAttachment($recordId, $fileTmpPath, $fileName, $fileType);
+            $response['uploadAttachment'] = $attachmentResponse;
+            file_put_contents('debug.log', "\nAttachment Response:\n" . print_r($attachmentResponse, true), FILE_APPEND);
+        }
+    } else {
+        $response['error'] = 'Failed to create record in Zoho Inventory';
+        file_put_contents('debug.log', "\nError: Failed to create record", FILE_APPEND);
+    }
+
+    // Return the response
+    echo json_encode($response);
+}

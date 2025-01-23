@@ -1,0 +1,1832 @@
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 28007
+    [message] => Please make sure that the payment made to the vendor is not recorded as zero.
+)
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 28007
+    [message] => Please make sure that the payment made to the vendor is not recorded as zero.
+)
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 28007
+    [message] => Please make sure that the payment made to the vendor is not recorded as zero.
+)
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 0
+    [message] => The payment made to the vendor has been recorded
+    [vendorpayment] => Array
+        (
+            [payment_id] => 401583000056839097
+            [vendor_id] => 401583000020700308
+            [vendor_name] => CRM MASTERS INFOTECH LLP
+            [status] => paid
+            [is_online_payment] => 
+            [transfer_type] => 
+            [branch_id] => 401583000000094044
+            [branch_name] => Gurgaon
+            [location_id] => 401583000000094044
+            [location_name] => Gurgaon
+            [payment_mode] => Cash
+            [payment_number] => 15980
+            [payment_number_prefix] => 
+            [payment_number_suffix] => 15980
+            [purpose_code] => 
+            [custom_fields] => Array
+                (
+                )
+
+            [custom_field_hash] => Array
+                (
+                )
+
+            [description] => 
+            [documents] => Array
+                (
+                )
+
+            [date] => 2025-01-23
+            [reference_number] => 
+            [exchange_rate] => 1
+            [tds_tax_id] => 
+            [indirect_tds_tax_id] => 
+            [indirect_tds_tax_amount] => 0
+            [indirect_tcs_tax_id] => 
+            [indirect_tcs_tax_amount] => 0
+            [indirect_tds_tax_details] => Array
+                (
+                )
+
+            [indirect_tcs_tax_details] => Array
+                (
+                )
+
+            [tds_calculation_type] => tds_item_level
+            [is_tds_amount_in_percent] => 
+            [tds_override_preference] => no_override
+            [tds_summary] => Array
+                (
+                )
+
+            [tax_account_id] => 
+            [tax_account_name] => 
+            [tax_amount_withheld] => 0
+            [amount] => 1
+            [total_payment_amount] => 1
+            [balance] => 1
+            [currency_id] => 401583000000000064
+            [currency_code] => INR
+            [currency_symbol] => ₹
+            [created_time] => 2025-01-23T12:45:06+0530
+            [last_modified_time] => 2025-01-23T12:45:06+0530
+            [created_by_id] => 401583000020669942
+            [created_by_name] => Statiq-CRM
+            [credit_account_id] => 
+            [paid_through_account_id] => 401583000000000456
+            [paid_through_account_name] => Undeposited Funds
+            [paid_through_account_type] => cash
+            [offset_account_id] => 401583000000009010
+            [offset_account_name] => Vendor Advance
+            [is_pre_gst] => 
+            [source_of_supply] => HR
+            [destination_of_supply] => HR
+            [gst_treatment] => business_gst
+            [tax_treatment] => business_gst
+            [gst_return_details] => Array
+                (
+                    [return_period] => 
+                    [status] => 
+                )
+
+            [gst_no] => 06AALFC6618F1ZH
+            [reverse_charge_tax_id] => 
+            [is_advance_payment] => 
+            [product_description] => 
+            [is_reverse_charge_applied] => 
+            [is_ach_payment] => 
+            [ach_payment_status] => 
+            [billing_address] => Array
+                (
+                    [address] => 
+                    [street2] => 
+                    [city] => 
+                    [state] => 
+                    [zip] => 
+                    [country] => 
+                    [fax] => 
+                    [phone] => 
+                    [attention] => 
+                )
+
+            [bills] => Array
+                (
+                )
+
+            [vendorpayment_refunds] => Array
+                (
+                )
+
+            [comments] => Array
+                (
+                    [0] => Array
+                        (
+                            [comment_id] => 401583000056839107
+                            [description] => Payment of ₹1.00 made
+                            [commented_by_id] => 401583000020669942
+                            [commented_by] => Statiq-CRM
+                            [date] => 2025-01-23
+                            [date_description] => few seconds ago
+                            [time] => 12:45 PM
+                            [operation_type] => Added
+                        )
+
+                )
+
+            [imported_transactions] => Array
+                (
+                )
+
+            [approvers_list] => Array
+                (
+                )
+
+            [submitted_date] => 
+            [submitted_by] => 
+            [submitted_by_name] => 
+            [submitted_by_email] => 
+            [submitted_by_photo_url] => 
+            [submitter_id] => 
+            [approver_id] => 
+        )
+
+)
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 28007
+    [message] => Please make sure that the payment made to the vendor is not recorded as zero.
+)
+
+No file uploaded or file error detected.
+
+Error: Failed to create record Array
+(
+    [code] => 0
+    [message] => The payment made to the vendor has been recorded
+    [vendorpayment] => Array
+        (
+            [payment_id] => 401583000056839125
+            [vendor_id] => 401583000020700308
+            [vendor_name] => CRM MASTERS INFOTECH LLP
+            [status] => paid
+            [is_online_payment] => 
+            [transfer_type] => 
+            [branch_id] => 401583000000094044
+            [branch_name] => Gurgaon
+            [location_id] => 401583000000094044
+            [location_name] => Gurgaon
+            [payment_mode] => Cash
+            [payment_number] => 15981
+            [payment_number_prefix] => 
+            [payment_number_suffix] => 15981
+            [purpose_code] => 
+            [custom_fields] => Array
+                (
+                )
+
+            [custom_field_hash] => Array
+                (
+                )
+
+            [description] => 
+            [documents] => Array
+                (
+                )
+
+            [date] => 2025-01-23
+            [reference_number] => 
+            [exchange_rate] => 1
+            [tds_tax_id] => 
+            [indirect_tds_tax_id] => 
+            [indirect_tds_tax_amount] => 0
+            [indirect_tcs_tax_id] => 
+            [indirect_tcs_tax_amount] => 0
+            [indirect_tds_tax_details] => Array
+                (
+                )
+
+            [indirect_tcs_tax_details] => Array
+                (
+                )
+
+            [tds_calculation_type] => tds_item_level
+            [is_tds_amount_in_percent] => 
+            [tds_override_preference] => no_override
+            [tds_summary] => Array
+                (
+                )
+
+            [tax_account_id] => 
+            [tax_account_name] => 
+            [tax_amount_withheld] => 0
+            [amount] => 1
+            [total_payment_amount] => 1
+            [balance] => 1
+            [currency_id] => 401583000000000064
+            [currency_code] => INR
+            [currency_symbol] => ₹
+            [created_time] => 2025-01-23T12:50:03+0530
+            [last_modified_time] => 2025-01-23T12:50:03+0530
+            [created_by_id] => 401583000020669942
+            [created_by_name] => Statiq-CRM
+            [credit_account_id] => 
+            [paid_through_account_id] => 401583000000000456
+            [paid_through_account_name] => Undeposited Funds
+            [paid_through_account_type] => cash
+            [offset_account_id] => 401583000000009010
+            [offset_account_name] => Vendor Advance
+            [is_pre_gst] => 
+            [source_of_supply] => HR
+            [destination_of_supply] => HR
+            [gst_treatment] => business_gst
+            [tax_treatment] => business_gst
+            [gst_return_details] => Array
+                (
+                    [return_period] => 
+                    [status] => 
+                )
+
+            [gst_no] => 06AALFC6618F1ZH
+            [reverse_charge_tax_id] => 
+            [is_advance_payment] => 
+            [product_description] => 
+            [is_reverse_charge_applied] => 
+            [is_ach_payment] => 
+            [ach_payment_status] => 
+            [billing_address] => Array
+                (
+                    [address] => 
+                    [street2] => 
+                    [city] => 
+                    [state] => 
+                    [zip] => 
+                    [country] => 
+                    [fax] => 
+                    [phone] => 
+                    [attention] => 
+                )
+
+            [bills] => Array
+                (
+                )
+
+            [vendorpayment_refunds] => Array
+                (
+                )
+
+            [comments] => Array
+                (
+                    [0] => Array
+                        (
+                            [comment_id] => 401583000056839135
+                            [description] => Payment of ₹1.00 made
+                            [commented_by_id] => 401583000020669942
+                            [commented_by] => Statiq-CRM
+                            [date] => 2025-01-23
+                            [date_description] => few seconds ago
+                            [time] => 12:50 PM
+                            [operation_type] => Added
+                        )
+
+                )
+
+            [imported_transactions] => Array
+                (
+                )
+
+            [approvers_list] => Array
+                (
+                )
+
+            [submitted_date] => 
+            [submitted_by] => 
+            [submitted_by_name] => 
+            [submitted_by_email] => 
+            [submitted_by_photo_url] => 
+            [submitter_id] => 
+            [approver_id] => 
+        )
+
+)
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+No file uploaded or file error detected.
+
+FILES Data:
+Array
+(
+    [cf_advance_payment_amount_unformatted] => 35400.00
+    [cf_advance_payment_percentage_unformatted] => 30
+    [cf_advance_payment_days_unformatted] => 5
+    [cf_advance_payment_due_date_unformatted] => 2025-01-28
+    [module_record_id] => 401583000056853026
+    [cf_pre_delivery_amount_unformatted] => 47200.00
+    [cf_pre_delivery_percentage_unformatted] => 40
+    [cf_pre_delivery_days_unformatted] => 10
+    [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+    [cf_post_delivery_amount_unformatted] => 35400.00
+    [cf_post_delivery_percentage_unformatted] => 30
+    [cf_post_delivery_days_unformatted] => 15
+    [cf_post_delivery_due_date_unformatted] => 2025-02-07
+)
+
+ Data----------------------------:
+Array
+(
+    [cf_advance_payment_amount_unformatted] => 35400.00
+    [cf_advance_payment_percentage_unformatted] => 30
+    [cf_advance_payment_days_unformatted] => 5
+    [cf_advance_payment_due_date_unformatted] => 2025-01-28
+    [cf_pre_delivery_amount_unformatted] => 47200.00
+    [cf_pre_delivery_percentage_unformatted] => 40
+    [cf_pre_delivery_days_unformatted] => 10
+    [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+    [cf_post_delivery_amount_unformatted] => 35400.00
+    [cf_post_delivery_percentage_unformatted] => 30
+    [cf_post_delivery_days_unformatted] => 15
+    [cf_post_delivery_due_date_unformatted] => 2025-02-07
+)
+
+FILES Data:
+Array
+(
+    [success] => 1
+    [response] => Array
+        (
+            [code] => 0
+            [message] => Purchase Order has been updated.
+            [purchaseorder] => Array
+                (
+                    [purchaseorder_id] => 401583000056853026
+                    [branch_id] => 401583000000094044
+                    [branch_name] => Gurgaon
+                    [location_id] => 401583000000094044
+                    [location_name] => Gurgaon
+                    [documents] => Array
+                        (
+                        )
+
+                    [tax_treatment] => business_gst
+                    [gst_no] => 06AALFC6618F1ZH
+                    [contact_category] => business_gst
+                    [gst_treatment] => business_gst
+                    [purchaseorder_number] => PO-2024-25/02165
+                    [date] => 2025-01-23
+                    [client_viewed_time] => 
+                    [is_viewed_by_client] => 
+                    [is_pre_gst] => 
+                    [expected_delivery_date] => 
+                    [reference_number] => 
+                    [status] => pending_approval
+                    [order_status] => pending_approval
+                    [is_received] => 
+                    [received_status] => 
+                    [billed_status] => 
+                    [color_code] => 
+                    [current_sub_status_id] => 
+                    [current_sub_status] => pending_approval
+                    [sub_statuses] => Array
+                        (
+                        )
+
+                    [source_of_supply] => HR
+                    [destination_of_supply] => HR
+                    [vendor_id] => 401583000020700308
+                    [vendor_name] => CRM MASTERS INFOTECH LLP
+                    [contact_persons] => Array
+                        (
+                        )
+
+                    [associated_contact_persons] => Array
+                        (
+                        )
+
+                    [currency_id] => 401583000000000064
+                    [currency_code] => INR
+                    [currency_symbol] => ₹
+                    [exchange_rate] => 1
+                    [delivery_date] => 
+                    [is_emailed] => 
+                    [is_drop_shipment] => 
+                    [is_inclusive_tax] => 
+                    [tax_rounding] => entity_level
+                    [is_reverse_charge_applied] => 
+                    [is_adv_tracking_in_receive] => 1
+                    [salesorder_id] => 
+                    [is_backorder] => 
+                    [is_po_marked_as_received] => 
+                    [total_quantity] => 10
+                    [tds_calculation_type] => tds_item_level
+                    [line_items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [item_id] => 401583000011517066
+                                    [line_item_id] => 401583000056853028
+                                    [salesorder_item_id] => 
+                                    [sku] => Batch001
+                                    [account_id] => 401583000000000567
+                                    [account_name] => Cost of Goods Sold
+                                    [name] => Test Batch
+                                    [description] => 
+                                    [item_order] => 1
+                                    [is_receivable] => 1
+                                    [bcy_rate] => 10000
+                                    [pricebook_id] => 
+                                    [header_id] => 
+                                    [header_name] => 
+                                    [rate] => 10000
+                                    [quantity] => 10
+                                    [package_details] => Array
+                                        (
+                                            [length] => 
+                                            [width] => 
+                                            [height] => 
+                                            [weight] => 
+                                            [weight_unit] => kg
+                                            [dimension_unit] => cm
+                                        )
+
+                                    [discount] => 0
+                                    [discounts] => Array
+                                        (
+                                        )
+
+                                    [quantity_received] => 0
+                                    [quantity_marked_as_received] => 0
+                                    [quantity_intransit] => 0
+                                    [quantity_cancelled] => 0
+                                    [quantity_billed] => 0
+                                    [unit] => pcs
+                                    [base_unit_id] => 401583000000009124
+                                    [unit_conversion_id] => 
+                                    [item_total] => 100000
+                                    [tax_exemption_id] => 
+                                    [tax_exemption_code] => 
+                                    [gst_treatment_code] => 
+                                    [tax_id] => 401583000000012130
+                                    [tax_name] => GST18
+                                    [tax_type] => tax_group
+                                    [tax_percentage] => 18
+                                    [tds_tax_id] => 
+                                    [tds_tax_name] => 
+                                    [tds_tax_percentage] => 
+                                    [tds_tax_amount] => 0
+                                    [product_type] => goods
+                                    [item_type] => purchases
+                                    [line_item_taxes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [tax_id] => 401583000000012122
+                                                    [tax_name] => SGST9 (9%)
+                                                    [tax_amount] => 9000
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [tax_id] => 401583000000012126
+                                                    [tax_name] => CGST9 (9%)
+                                                    [tax_amount] => 9000
+                                                )
+
+                                        )
+
+                                    [hsn_or_sac] => 
+                                    [reverse_charge_tax_id] => 
+                                    [tags] => Array
+                                        (
+                                        )
+
+                                    [item_custom_fields] => Array
+                                        (
+                                        )
+
+                                    [project_id] => 
+                                    [image_name] => 
+                                    [image_type] => 
+                                    [track_serial_for_receive] => 1
+                                    [track_batch_for_receive] => 1
+                                    [track_serial_number] => 
+                                    [track_batch_number] => 
+                                    [purchase_request_items] => Array
+                                        (
+                                        )
+
+                                    [is_combo_product] => 
+                                    [advanced_tracking_missing_quantity] => 0
+                                )
+
+                        )
+
+                    [is_advanced_tracking_missing] => 
+                    [has_qty_cancelled] => 
+                    [adjustment] => 0
+                    [adjustment_description] => Adjustment
+                    [discount_amount] => 0
+                    [discount] => 0
+                    [discount_applied_on_amount] => 0
+                    [is_discount_before_tax] => 1
+                    [discount_account_id] => 
+                    [discount_account_name] => 
+                    [discount_type] => entity_level
+                    [sub_total] => 100000
+                    [sub_total_inclusive_of_tax] => 0
+                    [tax_total] => 18000
+                    [discount_total] => 0
+                    [discount_percent] => 0
+                    [total] => 118000
+                    [taxes] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [tax_amount] => 9000
+                                    [tax_name] => SGST9 (9%)
+                                    [tax_amount_formatted] => ₹9,000.00
+                                    [tax_id] => 401583000000012122
+                                )
+
+                            [1] => Array
+                                (
+                                    [tax_amount] => 9000
+                                    [tax_name] => CGST9 (9%)
+                                    [tax_amount_formatted] => ₹9,000.00
+                                    [tax_id] => 401583000000012126
+                                )
+
+                        )
+
+                    [computation_type] => basic
+                    [tax_override] => 
+                    [tax_override_preference] => no_override
+                    [tds_override_preference] => no_override
+                    [tds_summary] => Array
+                        (
+                        )
+
+                    [price_precision] => 2
+                    [submitted_date] => 2025-01-23
+                    [submitted_by] => Statiq-CRM (statiq@crm-masters.in)
+                    [submitted_by_name] => Statiq-CRM
+                    [submitted_by_email] => statiq@crm-masters.in
+                    [submitted_by_photo_url] => https://contacts.zoho.in/file?t=user&ID=60032547607&fs=thumb
+                    [submitter_id] => 401583000020669942
+                    [approver_id] => 401583000000422003
+                    [approvers_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [order] => 1
+                                    [approver_user_id] => 401583000000422003
+                                    [approver_name] => Pranjal Vashishtha
+                                    [email] => pranjal.vashishtha@statiq.in
+                                    [has_approved] => 
+                                    [approval_status] => pending_approval
+                                    [is_next_approver] => 1
+                                    [submitted_date] => 2025-01-23
+                                    [approved_date] => 
+                                    [photo_url] => https://contacts.zoho.in/file?t=user&ID=60010279329&fs=thumb
+                                    [user_status] => active
+                                    [is_final_approver] => 
+                                    [available_apps] => Array
+                                        (
+                                            [0] => Zoho Books
+                                            [1] => Zoho Expense
+                                            [2] => Zoho Payroll
+                                            [3] => Zoho Inventory
+                                        )
+
+                                    [zuid] => 60010279329
+                                )
+
+                        )
+
+                    [billing_address_id] => 401583000020700312
+                    [billing_address] => Array
+                        (
+                            [address] => 529 To 532 Vipul Trade Center Sector 48
+                            [street2] => 
+                            [city] => Gurgaon
+                            [state] => Haryana
+                            [zip] => 122018
+                            [country] => India
+                            [fax] => 
+                            [phone] => 
+                            [attention] => 
+                        )
+
+                    [notes] => 
+                    [terms] => 100% at the time of Dispatch.
+                    [payment_terms] => 0
+                    [payment_terms_label] => 100% Advance
+                    [ship_via] => 
+                    [ship_via_id] => 
+                    [attention] => PRODUCTION_WAREHOUSE
+                    [delivery_org_address_id] => 401583000008451010
+                    [delivery_customer_id] => 
+                    [delivery_customer_address_id] => 
+                    [delivery_address] => Array
+                        (
+                            [zip] => 122101
+                            [country] => India
+                            [address] => FIRST FLOOR, MUSTIL NO-16,,KILLA NO 25/2, FAZILPUR, JHARSA
+                            [is_verifiable] => 1
+                            [is_primary] => 1
+                            [address2] => KILLA NO 25/2, FAZILPUR, JHARSA
+                            [city] => Gurugram
+                            [address1] => FIRST FLOOR, MUSTIL NO-16,
+                            [is_warehouse] => 1
+                            [is_verified] => 
+                            [organization_address_id] => 401583000008451010
+                            [phone] => 
+                            [is_valid] => 
+                            [state] => Haryana
+                            [email] => accounts@statiq.in
+                        )
+
+                    [custom_fields] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [field_id] => 401583000010213077
+                                    [customfield_id] => 401583000010213077
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 1
+                                    [label] => PR Number
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pr_number
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => test
+                                    [search_entity] => purchaseorder
+                                    [data_type] => string
+                                    [placeholder] => cf_pr_number
+                                    [value] => test
+                                    [is_dependent_field] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [field_id] => 401583000014573749
+                                    [customfield_id] => 401583000014573749
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 2
+                                    [label] => Department
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_department
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => test
+                                    [search_entity] => purchaseorder
+                                    [data_type] => string
+                                    [placeholder] => cf_department
+                                    [value] => test
+                                    [is_dependent_field] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [field_id] => 401583000023117687
+                                    [customfield_id] => 401583000023117687
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 3
+                                    [label] => Checkbox
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_checkbox
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => false
+                                    [search_entity] => purchaseorder
+                                    [data_type] => check_box
+                                    [placeholder] => cf_checkbox
+                                    [value] => 
+                                    [is_dependent_field] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [field_id] => 401583000042548694
+                                    [customfield_id] => 401583000042548694
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 4
+                                    [label] => Advance Payment Percent
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_percent
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 30%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_advance_payment_percent
+                                    [value] => 30
+                                    [is_dependent_field] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [field_id] => 401583000042548702
+                                    [customfield_id] => 401583000042548702
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 5
+                                    [label] => Advance Payment Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹35,400.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_advance_payment_amount
+                                    [value] => 35400
+                                    [is_dependent_field] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [field_id] => 401583000042548690
+                                    [customfield_id] => 401583000042548690
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 6
+                                    [label] => Advance Payment Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_days
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 5
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_advance_payment_days
+                                    [value] => 5
+                                    [is_dependent_field] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [field_id] => 401583000042548710
+                                    [customfield_id] => 401583000042548710
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 7
+                                    [label] => Advance Payment Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 28-01-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_advance_payment_due_date
+                                    [value] => 2025-01-28
+                                    [is_dependent_field] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [field_id] => 401583000042548650
+                                    [customfield_id] => 401583000042548650
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 8
+                                    [label] => Pre Delivery Percentage
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_percentage
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 40%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_pre_delivery_percentage
+                                    [value] => 40
+                                    [is_dependent_field] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [field_id] => 401583000042548654
+                                    [customfield_id] => 401583000042548654
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 9
+                                    [label] => Pre Delivery Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹47,200.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_pre_delivery_amount
+                                    [value] => 47200
+                                    [is_dependent_field] => 
+                                )
+
+                            [9] => Array
+                                (
+                                    [field_id] => 401583000042548658
+                                    [customfield_id] => 401583000042548658
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 10
+                                    [label] => Pre Delivery Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_days
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 10
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_pre_delivery_days
+                                    [value] => 10
+                                    [is_dependent_field] => 
+                                )
+
+                            [10] => Array
+                                (
+                                    [field_id] => 401583000042548662
+                                    [customfield_id] => 401583000042548662
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 11
+                                    [label] => Pre Delivery Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 02-02-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_pre_delivery_due_date
+                                    [value] => 2025-02-02
+                                    [is_dependent_field] => 
+                                )
+
+                            [11] => Array
+                                (
+                                    [field_id] => 401583000042548678
+                                    [customfield_id] => 401583000042548678
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 12
+                                    [label] => Post Delivery Percentage
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_percentage
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 30%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_post_delivery_percentage
+                                    [value] => 30
+                                    [is_dependent_field] => 
+                                )
+
+                            [12] => Array
+                                (
+                                    [field_id] => 401583000042594055
+                                    [customfield_id] => 401583000042594055
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 13
+                                    [label] => Post Delivery Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹35,400.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_post_delivery_amount
+                                    [value] => 35400
+                                    [is_dependent_field] => 
+                                )
+
+                            [13] => Array
+                                (
+                                    [field_id] => 401583000042625035
+                                    [customfield_id] => 401583000042625035
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 14
+                                    [label] => Post Delivery Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_dates
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 15
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_post_delivery_dates
+                                    [value] => 15
+                                    [is_dependent_field] => 
+                                )
+
+                            [14] => Array
+                                (
+                                    [field_id] => 401583000042548666
+                                    [customfield_id] => 401583000042548666
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 15
+                                    [label] => Post Delivery Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 07-02-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_post_delivery_due_date
+                                    [value] => 2025-02-07
+                                    [is_dependent_field] => 
+                                )
+
+                        )
+
+                    [custom_field_hash] => Array
+                        (
+                            [cf_pr_number] => test
+                            [cf_pr_number_unformatted] => test
+                            [cf_department] => test
+                            [cf_department_unformatted] => test
+                            [cf_checkbox] => false
+                            [cf_checkbox_unformatted] => 
+                            [cf_advance_payment_percent] => 30%
+                            [cf_advance_payment_percent_unformatted] => 30
+                            [cf_advance_payment_amount] => ₹35,400.00
+                            [cf_advance_payment_amount_unformatted] => 35400
+                            [cf_advance_payment_days] => 5
+                            [cf_advance_payment_days_unformatted] => 5
+                            [cf_advance_payment_due_date] => 28-01-2025
+                            [cf_advance_payment_due_date_unformatted] => 2025-01-28
+                            [cf_pre_delivery_percentage] => 40%
+                            [cf_pre_delivery_percentage_unformatted] => 40
+                            [cf_pre_delivery_amount] => ₹47,200.00
+                            [cf_pre_delivery_amount_unformatted] => 47200
+                            [cf_pre_delivery_days] => 10
+                            [cf_pre_delivery_days_unformatted] => 10
+                            [cf_pre_delivery_due_date] => 02-02-2025
+                            [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+                            [cf_post_delivery_percentage] => 30%
+                            [cf_post_delivery_percentage_unformatted] => 30
+                            [cf_post_delivery_amount] => ₹35,400.00
+                            [cf_post_delivery_amount_unformatted] => 35400
+                            [cf_post_delivery_dates] => 15
+                            [cf_post_delivery_dates_unformatted] => 15
+                            [cf_post_delivery_due_date] => 07-02-2025
+                            [cf_post_delivery_due_date_unformatted] => 2025-02-07
+                        )
+
+                    [attachment_name] => 
+                    [can_send_in_mail] => 
+                    [template_id] => 401583000000336063
+                    [template_name] => Spreadsheet Without Delivery Address
+                    [page_width] => 8.27in
+                    [page_height] => 11.69in
+                    [orientation] => portrait
+                    [template_type] => excel
+                    [created_time] => 2025-01-23T15:46:39+0530
+                    [created_by_id] => 401583000020669942
+                    [last_modified_time] => 2025-01-23T15:50:06+0530
+                    [can_mark_as_bill] => 
+                    [can_mark_as_unbill] => 
+                    [purchasereceives] => Array
+                        (
+                        )
+
+                    [salesorders] => Array
+                        (
+                        )
+
+                    [bills] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)
+
+FILES Data:
+Array
+(
+    [cf_advance_payment_amount_unformatted] => 3540.00
+    [cf_advance_payment_percentage_unformatted] => 30
+    [cf_advance_payment_days_unformatted] => 15
+    [cf_advance_payment_due_date_unformatted] => 2025-02-07
+    [module_record_id] => 401583000056830899
+    [cf_pre_delivery_amount_unformatted] => 4720.00
+    [cf_pre_delivery_percentage_unformatted] => 40
+    [cf_pre_delivery_days_unformatted] => 10
+    [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+    [cf_post_delivery_amount_unformatted] => 3540.00
+    [cf_post_delivery_percentage_unformatted] => 30
+    [cf_post_delivery_days_unformatted] => 10
+    [cf_post_delivery_due_date_unformatted] => 2025-02-02
+)
+
+ Data----------------------------:
+Array
+(
+    [cf_advance_payment_amount_unformatted] => 3540.00
+    [cf_advance_payment_percentage_unformatted] => 30
+    [cf_advance_payment_days_unformatted] => 15
+    [cf_advance_payment_due_date_unformatted] => 2025-02-07
+    [cf_pre_delivery_amount_unformatted] => 4720.00
+    [cf_pre_delivery_percentage_unformatted] => 40
+    [cf_pre_delivery_days_unformatted] => 10
+    [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+    [cf_post_delivery_amount_unformatted] => 3540.00
+    [cf_post_delivery_percentage_unformatted] => 30
+    [cf_post_delivery_days_unformatted] => 10
+    [cf_post_delivery_due_date_unformatted] => 2025-02-02
+)
+
+FILES Data:
+Array
+(
+    [success] => 1
+    [response] => Array
+        (
+            [code] => 0
+            [message] => Purchase Order has been updated.
+            [purchaseorder] => Array
+                (
+                    [purchaseorder_id] => 401583000056830899
+                    [branch_id] => 401583000000094044
+                    [branch_name] => Gurgaon
+                    [location_id] => 401583000000094044
+                    [location_name] => Gurgaon
+                    [documents] => Array
+                        (
+                        )
+
+                    [tax_treatment] => business_gst
+                    [gst_no] => 06AALFC6618F1ZH
+                    [contact_category] => business_gst
+                    [gst_treatment] => business_gst
+                    [purchaseorder_number] => PO-2024-25/02162
+                    [date] => 2025-01-23
+                    [client_viewed_time] => 
+                    [is_viewed_by_client] => 
+                    [is_pre_gst] => 
+                    [expected_delivery_date] => 
+                    [reference_number] => 
+                    [status] => pending_approval
+                    [order_status] => pending_approval
+                    [is_received] => 
+                    [received_status] => 
+                    [billed_status] => 
+                    [color_code] => 
+                    [current_sub_status_id] => 
+                    [current_sub_status] => pending_approval
+                    [sub_statuses] => Array
+                        (
+                        )
+
+                    [source_of_supply] => HR
+                    [destination_of_supply] => HR
+                    [vendor_id] => 401583000020700308
+                    [vendor_name] => CRM MASTERS INFOTECH LLP
+                    [contact_persons] => Array
+                        (
+                        )
+
+                    [associated_contact_persons] => Array
+                        (
+                        )
+
+                    [currency_id] => 401583000000000064
+                    [currency_code] => INR
+                    [currency_symbol] => ₹
+                    [exchange_rate] => 1
+                    [delivery_date] => 
+                    [is_emailed] => 
+                    [is_drop_shipment] => 
+                    [is_inclusive_tax] => 
+                    [tax_rounding] => entity_level
+                    [is_reverse_charge_applied] => 
+                    [is_adv_tracking_in_receive] => 1
+                    [salesorder_id] => 
+                    [is_backorder] => 
+                    [is_po_marked_as_received] => 
+                    [total_quantity] => 1
+                    [tds_calculation_type] => tds_item_level
+                    [line_items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [item_id] => 401583000011517066
+                                    [line_item_id] => 401583000056830901
+                                    [salesorder_item_id] => 
+                                    [sku] => Batch001
+                                    [account_id] => 401583000000000567
+                                    [account_name] => Cost of Goods Sold
+                                    [name] => Test Batch
+                                    [description] => 
+                                    [item_order] => 1
+                                    [is_receivable] => 1
+                                    [bcy_rate] => 10000
+                                    [pricebook_id] => 
+                                    [header_id] => 
+                                    [header_name] => 
+                                    [rate] => 10000
+                                    [quantity] => 1
+                                    [package_details] => Array
+                                        (
+                                            [length] => 
+                                            [width] => 
+                                            [height] => 
+                                            [weight] => 
+                                            [weight_unit] => kg
+                                            [dimension_unit] => cm
+                                        )
+
+                                    [discount] => 0
+                                    [discounts] => Array
+                                        (
+                                        )
+
+                                    [quantity_received] => 0
+                                    [quantity_marked_as_received] => 0
+                                    [quantity_intransit] => 0
+                                    [quantity_cancelled] => 0
+                                    [quantity_billed] => 0
+                                    [unit] => pcs
+                                    [base_unit_id] => 401583000000009124
+                                    [unit_conversion_id] => 
+                                    [item_total] => 10000
+                                    [tax_exemption_id] => 
+                                    [tax_exemption_code] => 
+                                    [gst_treatment_code] => 
+                                    [tax_id] => 401583000000012130
+                                    [tax_name] => GST18
+                                    [tax_type] => tax_group
+                                    [tax_percentage] => 18
+                                    [tds_tax_id] => 
+                                    [tds_tax_name] => 
+                                    [tds_tax_percentage] => 
+                                    [tds_tax_amount] => 0
+                                    [product_type] => goods
+                                    [item_type] => purchases
+                                    [line_item_taxes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [tax_id] => 401583000000012122
+                                                    [tax_name] => SGST9 (9%)
+                                                    [tax_amount] => 900
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [tax_id] => 401583000000012126
+                                                    [tax_name] => CGST9 (9%)
+                                                    [tax_amount] => 900
+                                                )
+
+                                        )
+
+                                    [hsn_or_sac] => 
+                                    [reverse_charge_tax_id] => 
+                                    [tags] => Array
+                                        (
+                                        )
+
+                                    [item_custom_fields] => Array
+                                        (
+                                        )
+
+                                    [project_id] => 
+                                    [image_name] => 
+                                    [image_type] => 
+                                    [track_serial_for_receive] => 1
+                                    [track_batch_for_receive] => 1
+                                    [track_serial_number] => 
+                                    [track_batch_number] => 
+                                    [purchase_request_items] => Array
+                                        (
+                                        )
+
+                                    [is_combo_product] => 
+                                    [advanced_tracking_missing_quantity] => 0
+                                )
+
+                        )
+
+                    [is_advanced_tracking_missing] => 
+                    [has_qty_cancelled] => 
+                    [adjustment] => 0
+                    [adjustment_description] => Adjustment
+                    [discount_amount] => 0
+                    [discount] => 0
+                    [discount_applied_on_amount] => 0
+                    [is_discount_before_tax] => 1
+                    [discount_account_id] => 
+                    [discount_account_name] => 
+                    [discount_type] => entity_level
+                    [sub_total] => 10000
+                    [sub_total_inclusive_of_tax] => 0
+                    [tax_total] => 1800
+                    [discount_total] => 0
+                    [discount_percent] => 0
+                    [total] => 11800
+                    [taxes] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [tax_amount] => 900
+                                    [tax_name] => SGST9 (9%)
+                                    [tax_amount_formatted] => ₹900.00
+                                    [tax_id] => 401583000000012122
+                                )
+
+                            [1] => Array
+                                (
+                                    [tax_amount] => 900
+                                    [tax_name] => CGST9 (9%)
+                                    [tax_amount_formatted] => ₹900.00
+                                    [tax_id] => 401583000000012126
+                                )
+
+                        )
+
+                    [computation_type] => basic
+                    [tax_override] => 
+                    [tax_override_preference] => no_override
+                    [tds_override_preference] => no_override
+                    [tds_summary] => Array
+                        (
+                        )
+
+                    [price_precision] => 2
+                    [submitted_date] => 2025-01-23
+                    [submitted_by] => Statiq-CRM (statiq@crm-masters.in)
+                    [submitted_by_name] => Statiq-CRM
+                    [submitted_by_email] => statiq@crm-masters.in
+                    [submitted_by_photo_url] => https://contacts.zoho.in/file?t=user&ID=60032547607&fs=thumb
+                    [submitter_id] => 401583000020669942
+                    [approver_id] => 401583000000422003
+                    [approvers_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [order] => 1
+                                    [approver_user_id] => 401583000000422003
+                                    [approver_name] => Pranjal Vashishtha
+                                    [email] => pranjal.vashishtha@statiq.in
+                                    [has_approved] => 
+                                    [approval_status] => pending_approval
+                                    [is_next_approver] => 1
+                                    [submitted_date] => 2025-01-23
+                                    [approved_date] => 
+                                    [photo_url] => https://contacts.zoho.in/file?t=user&ID=60010279329&fs=thumb
+                                    [user_status] => active
+                                    [is_final_approver] => 
+                                    [available_apps] => Array
+                                        (
+                                            [0] => Zoho Books
+                                            [1] => Zoho Expense
+                                            [2] => Zoho Payroll
+                                            [3] => Zoho Inventory
+                                        )
+
+                                    [zuid] => 60010279329
+                                )
+
+                        )
+
+                    [billing_address_id] => 401583000020700312
+                    [billing_address] => Array
+                        (
+                            [address] => 529 To 532 Vipul Trade Center Sector 48
+                            [street2] => 
+                            [city] => Gurgaon
+                            [state] => Haryana
+                            [zip] => 122018
+                            [country] => India
+                            [fax] => 
+                            [phone] => 
+                            [attention] => 
+                        )
+
+                    [notes] => 
+                    [terms] => 100% at the time of Dispatch.
+                    [payment_terms] => 0
+                    [payment_terms_label] => 100% Advance
+                    [ship_via] => 
+                    [ship_via_id] => 
+                    [attention] => PRODUCTION_WAREHOUSE
+                    [delivery_org_address_id] => 401583000008451010
+                    [delivery_customer_id] => 
+                    [delivery_customer_address_id] => 
+                    [delivery_address] => Array
+                        (
+                            [zip] => 122101
+                            [country] => India
+                            [address] => FIRST FLOOR, MUSTIL NO-16,,KILLA NO 25/2, FAZILPUR, JHARSA
+                            [is_verifiable] => 1
+                            [is_primary] => 1
+                            [address2] => KILLA NO 25/2, FAZILPUR, JHARSA
+                            [city] => Gurugram
+                            [address1] => FIRST FLOOR, MUSTIL NO-16,
+                            [is_warehouse] => 1
+                            [is_verified] => 
+                            [organization_address_id] => 401583000008451010
+                            [phone] => 
+                            [is_valid] => 
+                            [state] => Haryana
+                            [email] => accounts@statiq.in
+                        )
+
+                    [custom_fields] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [field_id] => 401583000010213077
+                                    [customfield_id] => 401583000010213077
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 1
+                                    [label] => PR Number
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pr_number
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => test
+                                    [search_entity] => purchaseorder
+                                    [data_type] => string
+                                    [placeholder] => cf_pr_number
+                                    [value] => test
+                                    [is_dependent_field] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [field_id] => 401583000014573749
+                                    [customfield_id] => 401583000014573749
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 2
+                                    [label] => Department
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_department
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => test
+                                    [search_entity] => purchaseorder
+                                    [data_type] => string
+                                    [placeholder] => cf_department
+                                    [value] => test
+                                    [is_dependent_field] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [field_id] => 401583000023117687
+                                    [customfield_id] => 401583000023117687
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 3
+                                    [label] => Checkbox
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_checkbox
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => false
+                                    [search_entity] => purchaseorder
+                                    [data_type] => check_box
+                                    [placeholder] => cf_checkbox
+                                    [value] => 
+                                    [is_dependent_field] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [field_id] => 401583000042548694
+                                    [customfield_id] => 401583000042548694
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 4
+                                    [label] => Advance Payment Percent
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_percent
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 30%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_advance_payment_percent
+                                    [value] => 30
+                                    [is_dependent_field] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [field_id] => 401583000042548702
+                                    [customfield_id] => 401583000042548702
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 5
+                                    [label] => Advance Payment Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹3,540.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_advance_payment_amount
+                                    [value] => 3540
+                                    [is_dependent_field] => 
+                                )
+
+                            [5] => Array
+                                (
+                                    [field_id] => 401583000042548690
+                                    [customfield_id] => 401583000042548690
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 6
+                                    [label] => Advance Payment Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_days
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 15
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_advance_payment_days
+                                    [value] => 15
+                                    [is_dependent_field] => 
+                                )
+
+                            [6] => Array
+                                (
+                                    [field_id] => 401583000042548710
+                                    [customfield_id] => 401583000042548710
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 7
+                                    [label] => Advance Payment Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_advance_payment_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 07-02-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_advance_payment_due_date
+                                    [value] => 2025-02-07
+                                    [is_dependent_field] => 
+                                )
+
+                            [7] => Array
+                                (
+                                    [field_id] => 401583000042548650
+                                    [customfield_id] => 401583000042548650
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 8
+                                    [label] => Pre Delivery Percentage
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_percentage
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 40%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_pre_delivery_percentage
+                                    [value] => 40
+                                    [is_dependent_field] => 
+                                )
+
+                            [8] => Array
+                                (
+                                    [field_id] => 401583000042548654
+                                    [customfield_id] => 401583000042548654
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 9
+                                    [label] => Pre Delivery Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹4,720.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_pre_delivery_amount
+                                    [value] => 4720
+                                    [is_dependent_field] => 
+                                )
+
+                            [9] => Array
+                                (
+                                    [field_id] => 401583000042548658
+                                    [customfield_id] => 401583000042548658
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 10
+                                    [label] => Pre Delivery Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_days
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 10
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_pre_delivery_days
+                                    [value] => 10
+                                    [is_dependent_field] => 
+                                )
+
+                            [10] => Array
+                                (
+                                    [field_id] => 401583000042548662
+                                    [customfield_id] => 401583000042548662
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 11
+                                    [label] => Pre Delivery Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_pre_delivery_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 02-02-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_pre_delivery_due_date
+                                    [value] => 2025-02-02
+                                    [is_dependent_field] => 
+                                )
+
+                            [11] => Array
+                                (
+                                    [field_id] => 401583000042548678
+                                    [customfield_id] => 401583000042548678
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 12
+                                    [label] => Post Delivery Percentage
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_percentage
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 30%
+                                    [search_entity] => purchaseorder
+                                    [data_type] => percent
+                                    [placeholder] => cf_post_delivery_percentage
+                                    [value] => 30
+                                    [is_dependent_field] => 
+                                )
+
+                            [12] => Array
+                                (
+                                    [field_id] => 401583000042594055
+                                    [customfield_id] => 401583000042594055
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 13
+                                    [label] => Post Delivery Amount
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_amount
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => ₹3,540.00
+                                    [search_entity] => purchaseorder
+                                    [data_type] => amount
+                                    [placeholder] => cf_post_delivery_amount
+                                    [value] => 3540
+                                    [is_dependent_field] => 
+                                )
+
+                            [13] => Array
+                                (
+                                    [field_id] => 401583000042625035
+                                    [customfield_id] => 401583000042625035
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 14
+                                    [label] => Post Delivery Days
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_dates
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 10
+                                    [search_entity] => purchaseorder
+                                    [data_type] => number
+                                    [placeholder] => cf_post_delivery_dates
+                                    [value] => 10
+                                    [is_dependent_field] => 
+                                )
+
+                            [14] => Array
+                                (
+                                    [field_id] => 401583000042548666
+                                    [customfield_id] => 401583000042548666
+                                    [show_in_store] => 
+                                    [show_in_portal] => 
+                                    [is_active] => 1
+                                    [index] => 15
+                                    [label] => Post Delivery Due Date
+                                    [show_on_pdf] => 
+                                    [edit_on_portal] => 
+                                    [edit_on_store] => 
+                                    [api_name] => cf_post_delivery_due_date
+                                    [show_in_all_pdf] => 
+                                    [value_formatted] => 02-02-2025
+                                    [search_entity] => purchaseorder
+                                    [data_type] => date
+                                    [placeholder] => cf_post_delivery_due_date
+                                    [value] => 2025-02-02
+                                    [is_dependent_field] => 
+                                )
+
+                        )
+
+                    [custom_field_hash] => Array
+                        (
+                            [cf_pr_number] => test
+                            [cf_pr_number_unformatted] => test
+                            [cf_department] => test
+                            [cf_department_unformatted] => test
+                            [cf_checkbox] => false
+                            [cf_checkbox_unformatted] => 
+                            [cf_advance_payment_percent] => 30%
+                            [cf_advance_payment_percent_unformatted] => 30
+                            [cf_advance_payment_amount] => ₹3,540.00
+                            [cf_advance_payment_amount_unformatted] => 3540
+                            [cf_advance_payment_days] => 15
+                            [cf_advance_payment_days_unformatted] => 15
+                            [cf_advance_payment_due_date] => 07-02-2025
+                            [cf_advance_payment_due_date_unformatted] => 2025-02-07
+                            [cf_pre_delivery_percentage] => 40%
+                            [cf_pre_delivery_percentage_unformatted] => 40
+                            [cf_pre_delivery_amount] => ₹4,720.00
+                            [cf_pre_delivery_amount_unformatted] => 4720
+                            [cf_pre_delivery_days] => 10
+                            [cf_pre_delivery_days_unformatted] => 10
+                            [cf_pre_delivery_due_date] => 02-02-2025
+                            [cf_pre_delivery_due_date_unformatted] => 2025-02-02
+                            [cf_post_delivery_percentage] => 30%
+                            [cf_post_delivery_percentage_unformatted] => 30
+                            [cf_post_delivery_amount] => ₹3,540.00
+                            [cf_post_delivery_amount_unformatted] => 3540
+                            [cf_post_delivery_dates] => 10
+                            [cf_post_delivery_dates_unformatted] => 10
+                            [cf_post_delivery_due_date] => 02-02-2025
+                            [cf_post_delivery_due_date_unformatted] => 2025-02-02
+                        )
+
+                    [attachment_name] => 
+                    [can_send_in_mail] => 
+                    [template_id] => 401583000000336063
+                    [template_name] => Spreadsheet Without Delivery Address
+                    [page_width] => 8.27in
+                    [page_height] => 11.69in
+                    [orientation] => portrait
+                    [template_type] => excel
+                    [created_time] => 2025-01-23T15:14:43+0530
+                    [created_by_id] => 401583000020669942
+                    [last_modified_time] => 2025-01-23T17:24:20+0530
+                    [can_mark_as_bill] => 
+                    [can_mark_as_unbill] => 
+                    [purchasereceives] => Array
+                        (
+                        )
+
+                    [salesorders] => Array
+                        (
+                        )
+
+                    [bills] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+)

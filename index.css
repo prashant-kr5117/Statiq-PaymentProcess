@@ -1,0 +1,127 @@
+body {
+  background-color: #ffffff;
+}
+
+.form-container {
+  width: 100%;
+  margin: 50px auto;
+  background: #f2f3f5;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.upload-btn {
+  background-color: #ffffff;
+  border: 2px dashed #007bff;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.form-control {
+  height: calc(2.5em + .75rem + 2px);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: #adb5bd;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  background-color: #184b81;
+  border: none;
+  border-radius: 14px;
+}
+
+
+#SubmitButton {
+  margin-bottom: 5px;
+}
+
+textarea {
+  border-radius: 6px;
+  /* border: 1px solid #ccc;  */
+  padding: 10px;
+  resize: vertical;
+}
+
+.form-group {
+  /* border: 1px solid #ddd;  */
+  border-radius: 8px;
+  padding: 10px;
+  /* Add some spacing inside the container */
+  margin-bottom: 10px;
+  /* Add spacing between containers */
+}
+
+.payment-Terms {
+  margin-top: 25px;
+}
+
+#formID {
+  margin-bottom: 5px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  vertical-align: middle;
+}
+
+.table-bordered thead th {
+  border-top: 1px solid #dee2e6;
+}
+
+input[type="text"] {
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.badge {
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.div_styling{
+  
+}
+
