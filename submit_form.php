@@ -53,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $tableData = [];
   $currentDateTime =  getCurrentDateTime();
 
-
   $moduleFields = [
     'cf_proforma_invoice_number' => $_POST['cf_proforma_invoice_number'] ?? null,
     'cf_date' =>  $_POST['cf_date'] ?? null,
@@ -72,6 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   if (isset($_POST['cf_scm_head_approval_status'])) { 
     $moduleFields['cf_scm_head_approval_status'] = $_POST['cf_scm_head_approval_status'];
+
 }
 
 if (isset($_POST['cf_finance_head_approval_statu'])) {
@@ -97,7 +97,6 @@ if (count($tableValues)!=0) {
 }
 
   file_put_contents('debug.log', "\nFILES Data:\n" . print_r($moduleFields, true), FILE_APPEND);
-
 
   $createResponse = $zohoInventory->create_TransferRequest($moduleFields); 
   file_put_contents('debug.log', "\nError: Failed to create record " . print_r($createResponse, true), FILE_APPEND);

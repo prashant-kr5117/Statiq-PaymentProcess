@@ -19,6 +19,7 @@ $user_id = $data['user']['user_id'] ?? null;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="statiq_logo.jpg" type="image/icon type">
+  <title>PI Status</title>
   <script src="./index.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -180,7 +181,7 @@ $user_id = $data['user']['user_id'] ?? null;
           </div>
           <div class="form-group col-md-6">
             <label for="paymentTerms">Finance Head Comment:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="2"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextare  a2" rows="2"></textarea>
           </div>
         </div>
 
@@ -272,65 +273,63 @@ $user_id = $data['user']['user_id'] ?? null;
     $(document).ready(function() {
 
   
-      $('#updatePaymentTerms').on('click', function() {
-
-
+    //   $('#updatePaymentTerms').on('click', function() {
         
-        if (po_module_record_id) {
-          $.ajax({
-            url: 'fetch_PO_details.php',
-            type: 'GET',
-            data: {
-              module_record_id: po_module_record_id
-            },
-            success: function(response) {
-              const poData = JSON.parse(response);
-              const recordFieldHash = JSON.parse(poData).purchaseorder.custom_field_hash;
-              grand_total = JSON.parse(poData).purchaseorder.total;
+    //     if (po_module_record_id) {
+    //       $.ajax({
+    //         url: 'fetch_PO_details.php',
+    //         type: 'GET',
+    //         data: {
+    //           module_record_id: po_module_record_id
+    //         },
+    //         success: function(response) {
+    //           const poData = JSON.parse(response);
+    //           const recordFieldHash = JSON.parse(poData).purchaseorder.custom_field_hash;
+    //           grand_total = JSON.parse(poData).purchaseorder.total;
     
 
-              for (const key in recordFieldHash) {
-                if (key.endsWith('_unformatted')) {
-                  eval(`var ${key} = recordFieldHash[key];`); // Creates separate variables
-                }
-              }
+    //           for (const key in recordFieldHash) {
+    //             if (key.endsWith('_unformatted')) {
+    //               eval(`var ${key} = recordFieldHash[key];`); // Creates separate variables
+    //             }
+    //           }
 
-              const tableBody = $("#paymentTableBody");
-              tableBody.empty();
-              const newRow = `
-              <tr>
-                <td>Advance</td>
-                <td contenteditable="true" class="amount" >${cf_advance_payment_amount_unformatted}</td>
-                <td contenteditable="true" class="percentage" >${cf_advance_payment_percent_unformatted}</td>
-                <td contenteditable="true" class="days" >${cf_advance_payment_days_unformatted}</td>
-                <td contenteditable="true"class="due-date">${cf_advance_payment_due_date_unformatted}</td>
-              </tr>
-              <tr>
-                <td>Pre Delivery</td>
-                <td contenteditable="true" class="amount" >${cf_pre_delivery_amount_unformatted}</td>
-                <td contenteditable="true" class="percentage" >${cf_pre_delivery_percentage_unformatted}</td>
-                <td contenteditable="true"class="days" >${cf_pre_delivery_days_unformatted}</td>
-                <td contenteditable="true"class="due-date">${cf_pre_delivery_due_date_unformatted}</td>
-              </tr>
+    //           const tableBody = $("#paymentTableBody");
+    //           tableBody.empty();
+    //           const newRow = `
+    //           <tr>
+    //             <td>Advance</td>
+    //             <td contenteditable="true" class="amount" >${cf_advance_payment_amount_unformatted}</td>
+    //             <td contenteditable="true" class="percentage" >${cf_advance_payment_percent_unformatted}</td>
+    //             <td contenteditable="true" class="days" >${cf_advance_payment_days_unformatted}</td>
+    //             <td contenteditable="true"class="due-date">${cf_advance_payment_due_date_unformatted}</td>
+    //           </tr>
+    //           <tr>
+    //             <td>Pre Delivery</td>
+    //             <td contenteditable="true" class="amount" >${cf_pre_delivery_amount_unformatted}</td>
+    //             <td contenteditable="true" class="percentage" >${cf_pre_delivery_percentage_unformatted}</td>
+    //             <td contenteditable="true"class="days" >${cf_pre_delivery_days_unformatted}</td>
+    //             <td contenteditable="true"class="due-date">${cf_pre_delivery_due_date_unformatted}</td>
+    //           </tr>
 
-              <tr>
-                <td>Post Delivery</td>
-                <td contenteditable="true" class="amount" >${cf_post_delivery_amount_unformatted}</td>
-                <td contenteditable="true" class="percentage" >${cf_post_delivery_percentage_unformatted}</td>
-                <td contenteditable="true"class="days" >${cf_post_delivery_dates_unformatted}</td>
-                <td contenteditable="true"class="due-date">${cf_post_delivery_due_date_unformatted}</td>
-              </tr>
-    `;
-              tableBody.append(newRow);
-            },
-            error: function(xhr, status, error) {
-              console.error("Error fetching warehouse stock:", error);
-              alert("Failed to fetch details. Please try again.");
-            }
-          });
-        }
+    //           <tr>
+    //             <td>Post Delivery</td>
+    //             <td contenteditable="true" class="amount" >${cf_post_delivery_amount_unformatted}</td>
+    //             <td contenteditable="true" class="percentage" >${cf_post_delivery_percentage_unformatted}</td>
+    //             <td contenteditable="true"class="days" >${cf_post_delivery_dates_unformatted}</td>
+    //             <td contenteditable="true"class="due-date">${cf_post_delivery_due_date_unformatted}</td>
+    //           </tr>
+    // `;
+    //           tableBody.append(newRow);
+    //         },
+    //         error: function(xhr, status, error) {
+    //           console.error("Error fetching warehouse stock:", error);
+    //           alert("Failed to fetch details. Please try again.");
+    //         }
+    //       });
+    //     }
 
-      });
+    //   });
 
 
       $('#paymentTableBody').on('input', '.amount', function() {
@@ -392,7 +391,6 @@ $user_id = $data['user']['user_id'] ?? null;
           return; // Exit if either date is invalid
         }
 
-        // Calculate the difference in days between the new date and the original date
         const timeDiff = newDate - originalDate; // Difference in milliseconds
         const daysDiff = Math.round(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
 
@@ -570,7 +568,7 @@ $user_id = $data['user']['user_id'] ?? null;
       days = urlParams.get("cf_payment_days_formatted");
       dueDate = urlParams.get("cf_payment_due_date_formatted");
       const currencyMatch = amount.match(/[^\d.]/g);
-      currency = currencyMatch ? currencyMatch[0] : "";
+      currency = currencyMatch ? currencyMatch.join("") : "USD";
 
       if (paymentType && amount) {
         const tableBody = document.querySelector("tbody");
@@ -676,23 +674,18 @@ $user_id = $data['user']['user_id'] ?? null;
             const cf_date_value = moduleRecordMaps.find(map => map.api_name === "cf_date").value;
             const cf_payment_type = moduleRecordMaps.find(map => map.api_name === "cf_payment_type").value;
             const cf_amount_to_be_paid = moduleRecordMaps.find(map => map.api_name === "cf_amount_to_be_paid").value;
-            const cf_payment_amount = moduleRecordMaps.find(map => map.api_name === "cf_payment_amount").value;
             const cf_purchase_order_data = moduleRecordMaps.find(map => map.api_name === "cf_purchase_order");
 
-
             if (cf_purchase_order_data) {
-
               $('#purchaseOrder').val(cf_purchase_order_data.value_formatted);
               $('#purchaseOrder').data('id', cf_purchase_order_data.value);
             }
 
             $('#cf_scm_head_approval_status').val(fetched_scm_head_approval_value);
             $('#cf_finance_head_approval_statu').val(fetched_finance_approval_value);
-            console.log("cf_date_value-------------",cf_date_value);
-            
             $('#piDate').val(cf_date_value);
             $('#paymentType').val(cf_payment_type);
-            $('#piAmount').val(cf_payment_amount);
+            $('#piAmount').val(cf_amount_to_be_paid);
             $('#cf_proforma_invoice_number').val(cf_proforma_invoice_number_value);
 
 
@@ -831,7 +824,8 @@ $user_id = $data['user']['user_id'] ?? null;
       $('#submitButton').on('click', function(event) {
         event.preventDefault();
 
-
+        console.log("------------------->");
+        
         // if ($('#cf_scm_head_approval_status').val() == "Approve" && $('#cf_finance_head_approval_statu').val() == "Approve") {
         //   window.location.href = 'https://inventory.zoho.in/app/60006170914#/paymentsmade/new?transaction_type=vendor_advance';
         // }
@@ -882,8 +876,6 @@ $user_id = $data['user']['user_id'] ?? null;
 
         const normalizedScmHeadStatus = scmHeadStatus ?? "null";
         console.log(normalizedFetchedValue, normalizedScmHeadStatus);
-
-
 
         if (normalizedFetchedValue !== normalizedScmHeadStatus) {
           console.log("Both are null");
@@ -953,7 +945,8 @@ $user_id = $data['user']['user_id'] ?? null;
           processData: false,
           contentType: false,
           success: function(response) {
-            console.log("Success!", response);
+
+            console.log("Success!-------------------------");
             alert("Record Updated Successfully!");
 
             const alertHTML = `
@@ -986,75 +979,64 @@ $user_id = $data['user']['user_id'] ?? null;
         });
 
           var vendor_id=0;
-        var vendor_name="";
+          var vendor_name="";
     let vendor_payment_form = new FormData();
-          if ($('#cf_scm_head_approval_status').val() == "Approve" && $('#cf_finance_head_approval_statu').val() == "Approve") {
+      //     if ($('#cf_scm_head_approval_status').val() == "Approve" && $('#cf_finance_head_approval_statu').val() == "Approve") {
 
-            const urlParams = new URLSearchParams(window.location.search);
-      const po_record_id = urlParams.get("cf_purchase_order"); 
+      //       const urlParams = new URLSearchParams(window.location.search);
+      // const po_record_id = urlParams.get("cf_purchase_order"); 
 
+      //     if (po_record_id) {
+      //       $.ajax({
+      //         url: 'fetch_PO_details.php',
+      //         type: 'GET',
+      //         data: {
+      //           module_record_id: po_record_id
+      //         },
+      //         success: function(response) {                
 
-          if (po_record_id) {
-            $.ajax({
-              url: 'fetch_PO_details.php',
-              type: 'GET',
-              data: {
-                module_record_id: po_record_id
-              },
-              success: function(response) {                
-
-                const poData = JSON.parse(response);
-                const recordFieldHash = JSON.parse(poData).purchaseorder.custom_field_hash;
-                vendor_id = JSON.parse(poData).purchaseorder.vendor_id;
-                vendor_name = JSON.parse(poData).purchaseorder.vendor_name;
+      //           const poData = JSON.parse(response);
+      //           const recordFieldHash = JSON.parse(poData).purchaseorder.custom_field_hash;
+      //           vendor_id = JSON.parse(poData).purchaseorder.vendor_id;
+      //           vendor_name = JSON.parse(poData).purchaseorder.vendor_name;
                       
 
-                vendor_payment_form.append("vendor_id", vendor_id);          
-                vendor_payment_form.append("vendor_name", vendor_name);           
-                // handleVendorDetails(vendor_id, vendor_name);
+      //           vendor_payment_form.append("vendor_id", vendor_id);          
+      //           vendor_payment_form.append("vendor_name", vendor_name);           
+      //           // handleVendorDetails(vendor_id, vendor_name);
                 
-                let digitsOnly = $('#piAmount').val().replace(/[^\d.]/g, '');
-console.log(digitsOnly);
-                
-                vendor_payment_form.append("amount",digitsOnly );
+      //           vendor_payment_form.append("amount", $('#piAmount').val());
                     
-                    $.ajax({
-                      url: 'create_vendor_payment.php',
-                      type: 'POST',
-                      data: vendor_payment_form,
-                      processData: false,
-                      contentType: false,
-                      success: function(response) {
-                        console.log("Success!", response);  
-                       const  created_record_Id = response.record_id;
-                       console.log("created_record_Id", created_record_Id);
-                       
-                       window.location.href = `https://inventory.zoho.in/app/60006170914#/paymentsmade/${created_record_Id}/edit`;
+      //               $.ajax({
+      //                 url: 'create_vendor_payment.php',
+      //                 type: 'POST',
+      //                 data: vendor_payment_form,
+      //                 processData: false,
+      //                 contentType: false,
+      //                 success: function(response) {
+      //                   console.log("Success!", response);  
+      //                  const  created_record_Id = response.record_id;
+      //                  window.location.href = `https://inventory.zoho.in/app/60006170914#/paymentsmade/${created_record_Id}/edit`;
 
-                      }, 
-                      error: function(xhr, status, error) {
-                        console.error('Error:', error);
-                      }
-                    });
+      //                 }, 
+      //                 error: function(xhr, status, error) {
+      //                   console.error('Error:', error);
+      //                 }
+      //               });
 
 
 
-              },
-              error: function(xhr, status, error) {
-                alert("Failed to fetch details. Please try again.");
-              }
+      //         },
+      //         error: function(xhr, status, error) {
+      //           alert("Failed to fetch details. Please try again.");
+      //         }
 
-            });
-          }
+      //       });
+      //     }
+     
+      //     // window.location.href = 'https://inventory.zoho.in/app/60006170914#/paymentsmade/new?transaction_type=vendor_advance';
 
-      
-
-
-
-      
-          // window.location.href = 'https://inventory.zoho.in/app/60006170914#/paymentsmade/new?transaction_type=vendor_advance';
-
-        }
+      //   }
 
       });
     });

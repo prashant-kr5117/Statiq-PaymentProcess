@@ -1,1 +1,8 @@
-{"access_token":"1000.a1187f705a2575b9183af1a210ed5e4f.1b5b6ee4181b5433eabadc343cf4eb19","scope":"ZohoInventory.fullaccess.all ZohoInventory.warehouses.READ","api_domain":"https:\/\/www.zohoapis.in","token_type":"Bearer","expires_in":3600,"expiring_at":"2025-01-23 18:08:24"}
+{
+  "access_token": "1000.e6ecabc1792ef1263d1f373d82f88a47.9a7100b8c02d71386a5a9669b93217fb",
+  "scope": "ZohoInventory.fullaccess.all ZohoInventory.warehouses.READ",
+  "api_domain": "https://www.zohoapis.in",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "expiring_at": "2025-02-10 12:33:45"
+}

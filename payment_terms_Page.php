@@ -64,8 +64,6 @@
     }
   </style>
 
-
-
 </head>
 
 <body>
@@ -95,8 +93,6 @@
 
   </div>
 
-
-
 </body>
 
 <script>
@@ -123,8 +119,6 @@
 
         const tableBody = $("#paymentTableBody");
         tableBody.empty();
-
-
         let newRow = "";
         if (
           typeof cf_advance_payment_amount_unformatted !== "undefined" ||
@@ -149,13 +143,13 @@
           typeof cf_pre_delivery_due_date_unformatted !== "undefined"
         ) {
           newRow += `
-    <tr>
-      <td>Pre Delivery</td>
-      <td contenteditable="true" class="amount">${typeof cf_pre_delivery_amount_unformatted !== "undefined" ? cf_pre_delivery_amount_unformatted : ""}</td>
-      <td contenteditable="true" class="percentage">${typeof cf_pre_delivery_percentage_unformatted !== "undefined" ? cf_pre_delivery_percentage_unformatted : ""}</td>
-      <td contenteditable="true" class="days">${typeof cf_pre_delivery_days_unformatted !== "undefined" ? cf_pre_delivery_days_unformatted : ""}</td>
-      <td contenteditable="true" class="due-date">${typeof cf_pre_delivery_due_date_unformatted !== "undefined" ? cf_pre_delivery_due_date_unformatted : ""}</td>
-    </tr>`;
+          <tr>
+            <td>Pre Delivery</td>
+            <td contenteditable="true" class="amount">${typeof cf_pre_delivery_amount_unformatted !== "undefined" ? cf_pre_delivery_amount_unformatted : ""}</td>
+            <td contenteditable="true" class="percentage">${typeof cf_pre_delivery_percentage_unformatted !== "undefined" ? cf_pre_delivery_percentage_unformatted : ""}</td>
+            <td contenteditable="true" class="days">${typeof cf_pre_delivery_days_unformatted !== "undefined" ? cf_pre_delivery_days_unformatted : ""}</td>
+            <td contenteditable="true" class="due-date">${typeof cf_pre_delivery_due_date_unformatted !== "undefined" ? cf_pre_delivery_due_date_unformatted : ""}</td>
+          </tr>`;
         }
 
         if (
@@ -163,15 +157,15 @@
           typeof cf_post_delivery_percentage_unformatted !== "undefined" ||
           typeof cf_post_delivery_dates_unformatted !== "undefined" ||
           typeof cf_post_delivery_due_date_unformatted !== "undefined"
-        ) {
+        )
+        {
           newRow += `
-    <tr>
-      <td>Post Delivery</td>
-      <td contenteditable="true" class="amount">${typeof cf_post_delivery_amount_unformatted !== "undefined" ? cf_post_delivery_amount_unformatted : ""}</td>
-      <td contenteditable="true" class="percentage">${typeof cf_post_delivery_percentage_unformatted !== "undefined" ? cf_post_delivery_percentage_unformatted : ""}</td>
-      <td contenteditable="true" class="days">${typeof cf_post_delivery_dates_unformatted !== "undefined" ? cf_post_delivery_dates_unformatted : ""}</td>
-      <td contenteditable="true" class="due-date">${typeof cf_post_delivery_due_date_unformatted !== "undefined" ? cf_post_delivery_due_date_unformatted : ""}</td>
-    </tr>`;
+          <tr>
+            <td>Post Delivery</td>
+            <td contenteditable="true" class="amount">${typeof cf_post_delivery_amount_unformatted !== "undefined" ? cf_post_delivery_amount_unformatted : ""}</td>
+            <td contenteditable="true" class="percentage">${typeof cf_post_delivery_percentage_unformatted !== "undefined" ? cf_post_delivery_percentage_unformatted : ""}</td>
+          
+          </tr>`;
         }
 
         tableBody.append(newRow);
@@ -197,35 +191,80 @@
   // });
 
   // Track the original Days value
+  // $('#paymentTableBody').on('focus', '.days', function() {
+  //   // Store the original Days value in a data attribute
+  //   $(this).data('originalDays', parseInt($(this).text()) || 0);
+  // });
+
+  // $('#paymentTableBody').on('input', '.days', function() {
+  //   let newDays = parseInt($(this).text()) || 0;
+
+  //   if (newDays < 0) {
+  //       alert("Days value cannot be negative!");
+  //       if ($(this).is('input')) {
+  //           $(this).val(originalDays);
+  //       } else {
+  //           $(this).text(originalDays);
+  //       }
+  //       return;
+  //   }
+
+  //   let originalDays = $(this).data('originalDays') || 0;
+  //   let deltaDays = newDays - originalDays;
+  //   let dueDateCell = $(this).closest('tr').find('.due-date');
+  //   let baseDateStr = dueDateCell.text().trim();
+  //   let baseDate = baseDateStr ? new Date(baseDateStr) : new Date(); // Default to today if empty
+  //   baseDate.setDate(baseDate.getDate() + deltaDays);
+  //   let newDueDate = baseDate.toISOString().split('T')[0];
+  //   dueDateCell.text(newDueDate); // Update the Due Date cell
+  //   $(this).data('originalDays', newDays);
+  // });
+
   $('#paymentTableBody').on('focus', '.days', function() {
-    // Store the original Days value in a data attribute
-    $(this).data('originalDays', parseInt($(this).text()) || 0);
-  });
+    // Store the original Days value correctly based on element type
+    let $element = $(this);
+    let originalDays;
+    if ($element.is('input')) {
+        originalDays = parseInt($element.val()) || 0;
+    } else {
+        originalDays = parseInt($element.text()) || 0;
+    }
+    $element.data('originalDays', originalDays);
+});
 
-  // Update Due Date when Days field changes
-  $('#paymentTableBody').on('input', '.days', function() {
-    let newDays = parseInt($(this).text()) || 0;
-    let originalDays = $(this).data('originalDays') || 0;
+$('#paymentTableBody').on('input', '.days', function() {
+    let $element = $(this);
+    let isInput = $element.is('input');
+    let originalDays = $element.data('originalDays') || 0;
 
-    // Calculate the delta (difference in days)
+    // Get current value based on element type
+    let currentValue = isInput ? $element.val() : $element.text();
+    let newDays = parseInt(currentValue) || 0;
+
+    // Prevent negative values
+    if (newDays < 0) {
+        alert("Days value cannot be negative!");
+        if (isInput) {
+            $element.val(originalDays);
+        } else {
+            $element.text(originalDays);
+        }
+        return; 
+    }
+
+    // Update due date calculations
     let deltaDays = newDays - originalDays;
-
-    // Get the current Due Date from the cell
-    let dueDateCell = $(this).closest('tr').find('.due-date');
+    let dueDateCell = $element.closest('tr').find('.due-date');
     let baseDateStr = dueDateCell.text().trim();
-    let baseDate = baseDateStr ? new Date(baseDateStr) : new Date(); // Default to today if empty
+    let baseDate = baseDateStr ? new Date(baseDateStr) : new Date();
     baseDate.setDate(baseDate.getDate() + deltaDays);
+    dueDateCell.text(baseDate.toISOString().split('T')[0]);
 
-    // Format the new Due Date as YYYY-MM-DD
-    let newDueDate = baseDate.toISOString().split('T')[0];
-    dueDateCell.text(newDueDate); // Update the Due Date cell
-
-    // Update the original Days value to the new one for subsequent edits
-    $(this).data('originalDays', newDays);
-  });
+    // Store the new valid value as original
+    $element.data('originalDays', newDays);
+});
 
   $('#paymentTableBody').on('focus', '.due-date', function() {
-    // Store the original date in a data attribute
     const originalDate = new Date($(this).text().trim());
     if (!isNaN(originalDate)) {
       $(this).data('originalDate', originalDate);
@@ -234,21 +273,18 @@
 
   // Update the "Days" column when the date is changed
   $('#paymentTableBody').on('input', '.due-date', function() {
-
     const originalDate = $(this).data('originalDate');
     const newDate = new Date($(this).text().trim());
     if (isNaN(originalDate) || isNaN(newDate)) {
-      return; // Exit if either date is invalid
+      return; 
     }
 
     const timeDiff = newDate - originalDate; // Difference in milliseconds
     const daysDiff = Math.round(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
-
     const daysCell = $(this).closest('tr').find('.days');
     const originalDays = $(this).data('originalDays') || parseInt(daysCell.text()) || 0;
     const newDaysValue = originalDays + daysDiff;
     daysCell.text(newDaysValue);
-
     $(this).data('originalDate', newDate);
     $(this).data('originalDays', newDaysValue);
   });
@@ -270,7 +306,7 @@
       tableData.push(row);
       totalPercentage += parseFloat(row.percentage) || 0;
     });
-    if (totalPercentage !== 100) {
+    if (totalPercentage > 100) {
 
       const alertHTML = `
         <div style="margin-top:15px;" class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -329,7 +365,7 @@
 
         setTimeout(function() {
           $('.alert').alert('close');
-          // window.location.href = "https://inventory.zoho.in/app/60006170914#/purchaseorders/" + module_record_id + "?filter_by=Status.All&per_page=200&search_criteria=%7B%22search_text%22%3A%22crm%22%7D&sort_column=created_time&sort_order=D";
+          window.location.href = "https://inventory.zoho.in/app/60006170914#/purchaseorders/" + module_record_id + "?filter_by=Status.All&per_page=200&search_criteria=%7B%22search_text%22%3A%22crm%22%7D&sort_column=created_time&sort_order=D";
         }, 500);
       },
       error: function(xhr, status, error) {
@@ -345,6 +381,7 @@
     advance_form.append('cf_days', tableData[0].days);
     advance_form.append('cf_due_date', tableData[0].dueDate);
     advance_form.append('cf_due_amount', tableData[0].amount);
+    advance_form.append('cf_percentage', tableData[0].percentage);
 
     $.ajax({
       url: 'create_running_payment_term.php',
@@ -361,13 +398,12 @@
     });
 
     let pre_form = new FormData();
-
     pre_form.append('cf_payment_type', "Pre Delivery");
     pre_form.append('cf_purchase_order', module_record_id);
     pre_form.append('cf_days', tableData[1].days);
     pre_form.append('cf_due_date', tableData[1].dueDate);
     pre_form.append('cf_due_amount', tableData[1].amount);
-
+    pre_form.append('cf_percentage', tableData[1].percentage);
 
     $.ajax({
       url: 'create_running_payment_term.php',

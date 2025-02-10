@@ -96,7 +96,7 @@ $user_name = $data['user']['name'] ?? null;
           </div>
           <div class="form-group col-md-6">
             <label for="paymentType">Payment Type:</label>
-            <input type="text" class="form-control" id="paymentType" name="paymentType:" placeholder="Payment Type">
+            <input type="text" class="form-control" id="paymentType" name="paymentType:" placeholder="Payment Type" readonly>
           </div>
         </div>
 
@@ -150,7 +150,7 @@ $user_name = $data['user']['name'] ?? null;
             </tbody>
           </table>
         </div>
-        <button type="button" class="btn btn-secondary px-4 py-2 mx-3 my-2" id="updatePaymentTerms" data-toggle="modal" data-target="#exampleModalCenter">Update Payment Terms</button>
+        <!-- <button type="button" class="btn btn-secondary px-4 py-2 mx-3 my-2" id="updatePaymentTerms" data-toggle="modal" data-target="#exampleModalCenter">Update Payment Terms</button> -->
         <button type="submit" id="submitButton" class="btn btn-primary submit-btn ">Submit</button>
       </form>
     </div>
@@ -218,6 +218,9 @@ $user_name = $data['user']['name'] ?? null;
 
         const tableBody = document.querySelector("#paymentTermsTable tbody");
         const piAmountField = document.getElementById("piAmount");
+        console.log("-----++++++++--");
+
+    
 
         // Function to update the piAmount field whenever an Amount field is changed
         function syncAmountField(e) {
@@ -225,7 +228,7 @@ $user_name = $data['user']['name'] ?? null;
 
           const updatedAmount = parseFloat(e.target.value) || 0; // Get the new value from the field
           piAmountField.value = updatedAmount.toFixed(2); // Update the piAmount field with the new value
-          console.log(`Amount synchronized: ${updatedAmount}`);
+
         }
 
         // Event listeners for Enter key and blur events
@@ -319,6 +322,15 @@ $user_name = $data['user']['name'] ?? null;
 
         let grand_total = 0;
 
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const payment_amount = urlParams.get("cf_payment_amount");
+        console.log("packment_amount------",packment_amount);
+
+        $('piAmount').val(payment_amount);
+
+
+
         $('#updatePaymentTerms').on('click', function() {
 
           const urlParams = new URLSearchParams(window.location.search);
@@ -342,11 +354,8 @@ $user_name = $data['user']['name'] ?? null;
                     eval(`var ${key} = recordFieldHash[key];`); // Creates separate variables
                   }
                 }
-
                 const tableBody = $("#paymentTableBody");
                 tableBody.empty();
-           
-
               let newRow = ""; 
         if (
           typeof cf_advance_payment_amount_unformatted !== "undefined" ||
@@ -364,7 +373,6 @@ $user_name = $data['user']['name'] ?? null;
     </tr>`;
         }
 
-        // Add "Pre Delivery" row if data is available
         if (
           typeof cf_pre_delivery_amount_unformatted !== "undefined" ||
           typeof cf_pre_delivery_percentage_unformatted !== "undefined" ||
@@ -381,21 +389,19 @@ $user_name = $data['user']['name'] ?? null;
     </tr>`;
         }
 
-        // Add "Post Delivery" row if data is available
         if (
-          typeof cf_post_delivery_amount_unformatted !== "undefined" ||
-          typeof cf_post_delivery_percentage_unformatted !== "undefined" ||
-          typeof cf_post_delivery_dates_unformatted !== "undefined" ||
-          typeof cf_post_delivery_due_date_unformatted !== "undefined"
-        ) {
+typeof cf_post_delivery_amount_unformatted !== "undefined" || typeof cf_post_delivery_percentage_unformatted !== "undefined" ||
+          typeof cf_post_delivery_dates_unformatted !== "undefined" || typeof cf_post_delivery_due_date_unformatted !== "undefined"
+        )
+         {
           newRow += `
-    <tr>
-      <td>Post Delivery</td>
-      <td contenteditable="true" class="amount">${typeof cf_post_delivery_amount_unformatted !== "undefined" ? cf_post_delivery_amount_unformatted : ""}</td>
-      <td contenteditable="true" class="percentage">${typeof cf_post_delivery_percentage_unformatted !== "undefined" ? cf_post_delivery_percentage_unformatted : ""}</td>
-      <td contenteditable="true" class="days">${typeof cf_post_delivery_dates_unformatted !== "undefined" ? cf_post_delivery_dates_unformatted : ""}</td>
-      <td contenteditable="true" class="due-date">${typeof cf_post_delivery_due_date_unformatted !== "undefined" ? cf_post_delivery_due_date_unformatted : ""}</td>
-    </tr>`;
+          <tr>
+            <td>Post Delivery</td>
+            <td contenteditable="true" class="amount">${typeof cf_post_delivery_amount_unformatted !== "undefined" ? cf_post_delivery_amount_unformatted : ""}</td>
+            <td contenteditable="true" class="percentage">${typeof cf_post_delivery_percentage_unformatted !== "undefined" ? cf_post_delivery_percentage_unformatted : ""}</td>
+            <td contenteditable="true" class="days">${typeof cf_post_delivery_dates_unformatted !== "undefined" ? cf_post_delivery_dates_unformatted : ""}</td>
+            <td contenteditable="true" class="due-date">${typeof cf_post_delivery_due_date_unformatted !== "undefined" ? cf_post_delivery_due_date_unformatted : ""}</td>
+          </tr>`;
         }
 
                 tableBody.append(newRow);
@@ -406,9 +412,7 @@ $user_name = $data['user']['name'] ?? null;
               }
             });
           }
-
         });
-
 
         $('#paymentTableBody').on('input', '.amount', function() {
           let amount = parseFloat($(this).text()) || 0;
@@ -443,15 +447,10 @@ $user_name = $data['user']['name'] ?? null;
 
           // Add the delta to the base date
           baseDate.setDate(baseDate.getDate() + deltaDays);
-
-          // Format the new Due Date as YYYY-MM-DD
           let newDueDate = baseDate.toISOString().split('T')[0];
           dueDateCell.text(newDueDate); // Update the Due Date cell
-
-          // Update the original Days value to the new one for subsequent edits
           $(this).data('originalDays', newDays);
         });
-
 
         $('#paymentTableBody').on('focus', '.due-date', function() {
           // Store the original date in a data attribute
@@ -470,21 +469,18 @@ $user_name = $data['user']['name'] ?? null;
             return; // Exit if either date is invalid
           }
 
-          // Calculate the difference in days between the new date and the original date
-          const timeDiff = newDate - originalDate; // Difference in milliseconds
-          const daysDiff = Math.round(timeDiff / (1000 * 60 * 60 * 24)); // Convert to days
+          const timeDiff = newDate - originalDate; 
+          const daysDiff = Math.round(timeDiff / (1000 * 60 * 60 * 24)); 
 
           const daysCell = $(this).closest('tr').find('.days');
           const originalDays = $(this).data('originalDays') || parseInt(daysCell.text()) || 0;
           const newDaysValue = originalDays + daysDiff;
           daysCell.text(newDaysValue);
 
-          // Update the stored original date and days for the next interaction
           $(this).data('originalDate', newDate);
           $(this).data('originalDays', newDaysValue);
         });
       });
-
 
       $('#saveChanges').on('click', function() {
         const tableData = [];
@@ -497,7 +493,7 @@ $user_name = $data['user']['name'] ?? null;
             days: $(this).find("td:eq(3)").text().trim(), // Days
             dueDate: $(this).find("td:eq(4)").text().trim(), // Due Date
           };
-          tableData.push(row); // Add row data to array
+          tableData.push(row); // Add row data to array.
           totalPercentage += parseFloat(row.percentage) || 0;
         });
 
@@ -567,10 +563,8 @@ $user_name = $data['user']['name'] ?? null;
           },
           error: function(xhr, status, error) {
             console.error('Error:', error);
-
           }
         });
-
       });
 
       const urlParams = new URLSearchParams(window.location.search);
@@ -609,8 +603,8 @@ $user_name = $data['user']['name'] ?? null;
 
       // Extract currency from amount
       const currencyMatch = amount.match(/[^0-9.]/g);
-      currency = currencyMatch ? currencyMatch.join("") : "";
-
+      currency = currencyMatch ? currencyMatch[0]:"";
+      // currency = currencyMatch ? currencyMatch.join("") : "";
 
       function cleanNumber(str) {
         // Remove commas and any spaces first
@@ -697,7 +691,6 @@ $user_name = $data['user']['name'] ?? null;
       // });
 
       document.getElementById('saveChanges').addEventListener('click', function() {
-        // Reference the target table's first row and fetch its Payment Type
         const targetTableBody = document.querySelector('.payment-Terms tbody');
         const targetRow = targetTableBody.querySelector('tr');
         const paymentTypeInTarget = targetRow ? targetRow.cells[1].textContent.trim() : null;
@@ -707,11 +700,9 @@ $user_name = $data['user']['name'] ?? null;
           return;
         }
 
-        // Reference the modal table body and its rows
         const modalTableBody = document.getElementById('paymentTableBody');
         const modalRows = modalTableBody.querySelectorAll('tr');
 
-        // Determine the corresponding row in the modal table based on the payment type
         let modalRow;
         if (paymentTypeInTarget === 'Advance') {
           modalRow = modalRows[0];
@@ -724,14 +715,12 @@ $user_name = $data['user']['name'] ?? null;
           return;
         }
 
-        // Extract data from the selected modal row
         const paymentType = modalRow.cells[0].textContent.trim();
         const amount = modalRow.cells[1].textContent.trim();
         const percentage = modalRow.cells[2].textContent.trim();
         const days = modalRow.cells[3].textContent.trim();
         const dueDate = modalRow.cells[4].textContent.trim();
 
-        // Update the target table's row with visible data and hidden data attributes
         targetRow.innerHTML = `
         <td>1</td>
         <td data-payment-type="${paymentType}">${paymentType}</td>
@@ -742,23 +731,67 @@ $user_name = $data['user']['name'] ?? null;
         <td data-due-date="${dueDate}">${dueDate}</td>
       `;
 
-        // Close the modal
         $('#exampleModalCenter').modal('hide');
       });
 
-
-
-      document.getElementById('formID').addEventListener('submit', function(event) {
+      
+      $('#submitButton').on('click', function(event) {
 
         const piNumber = document.getElementById('piNumber').value.trim();
         const piDate = document.getElementById('piDate').value.trim();
         const piAmount = document.getElementById('piAmount').value;
+        const fileInput = document.getElementById('cf_attachment');
+  
+        if (!fileInput.files || fileInput.files.length === 0) {
+   
+          const alertHTML = `
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 9999;" 
+         class="alert alert-warning alert-dismissible fade show" 
+         role="alert">
+        <div class="d-flex align-items-center">
+            <strong>Attach the document before submit!</strong>
+            <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+`;
+
+$('body').prepend(alertHTML);
+
+setTimeout(function() {
+    $('.alert').alert('close');
+}, 2000);
+
+          return; 
+        }
 
         if (!piNumber || !piDate || !piAmount) {
+          const alertHTML = `
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 9999;" 
+         class="alert alert-warning alert-dismissible fade show" 
+         role="alert">
+        <div class="d-flex align-items-center">
+            <strong>Submit all mandatory fields.</strong>
+            <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+`;
+
+$('body').prepend(alertHTML);
+
+setTimeout(function() {
+    $('.alert').alert('close');
+}, 2000);
+          
           event.preventDefault(); 
-          alert('All fields are mandatory. Please fill in all fields.');
+         
         }
+
       });
+
       let scmHeadStatus = "";
       let financeHeadStatus = "";
       $('#cf_scm_head_approval_status, #cf_finance_head_approval_statu').on('change', function() {
@@ -836,7 +869,7 @@ $user_name = $data['user']['name'] ?? null;
         formData.append('vendor_id', vendor_id);
         formData.append('cf_proforma_invoice_number', piNumber);
         formData.append('cf_date', piDate);
-        formData.append('cf_amount_to_be_paid', $('#piAmount').val().replace(/[^0-9.,]/g, '').replace(/,/g, ''));
+        formData.append('cf_amount_to_be_paid', document.getElementById('piAmount').value);
         formData.append('cf_payment_amount', $('#piAmount').val());
         formData.append('cf_purchase_order', poRecordId);
         formData.append('cf_po_num', purchaseOrderNumber);
@@ -901,13 +934,31 @@ $user_name = $data['user']['name'] ?? null;
           contentType: false,
           data: formData,
           success: function(response) {
-            console.log(response);
+            const alertHTML = `
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 9999;" 
+         class="alert alert-success alert-dismissible fade show" 
+         role="alert">
+        <div class="d-flex align-items-center">
+            <strong>Form submitted successfully!</strong>
+            <button type="button" class="close ml-2" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+`;
+
+$('body').prepend(alertHTML);
+
+setTimeout(function() {
+    $('.alert').alert('close');
+}, 2000);
             window.location.href = './secondScreen.php';
           },
           error: function() {
             alert('Failed to submit the form');
           }
         });
+
       });
     </script>
 

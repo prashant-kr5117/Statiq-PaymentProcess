@@ -7,7 +7,9 @@ require 'zoho/ZohoInventory.php';
 $zohoInventory = new ZohoInventory();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
+
+
+    file_put_contents('debug.log', "\nFILES Data:\n" . print_r($_POST, true), FILE_APPEND);
     $moduleFields = [
         'cf_date' => $_POST['cf_date'] ?? '',
         'cf_amount_to_be_paid' => $_POST['piAmount'] ?? 0.00,
@@ -71,8 +73,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         file_put_contents('debug.log', "\nNo file uploaded or file error detected.\n", FILE_APPEND);
     }
 
+    
     $moduleRecordId = $_POST['module_record_id'] ?? null;
     $recordResponse = $zohoInventory->updateZohoInventoryRecord($moduleRecordId, $moduleFields);
+
+    file_put_contents('debug5.log', "\nFILES Data:\n" . print_r($recordResponse, true), FILE_APPEND);
+
 
     echo json_encode(['status' => 'success', 'message' => 'Data received']);
 } else {

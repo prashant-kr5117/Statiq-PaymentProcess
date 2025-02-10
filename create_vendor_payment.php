@@ -41,8 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'message' => 'An error occurred: ' . $e->getMessage()
         ];
     }
-
-    // Clear any extra output
     ob_clean();
 
     // Return JSON response
